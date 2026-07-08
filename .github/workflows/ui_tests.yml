@@ -15,10 +15,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    
-  env:
-    HEADLESS: true
-
+    env:
+      HEADLESS: true
 
     steps:
 
