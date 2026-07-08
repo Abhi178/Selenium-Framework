@@ -1,11 +1,17 @@
 import sqlite3
+import os
 
-conn = sqlite3.connect("database/test.db")
+DB_PATH = "database/test.db"
+
+if os.path.exists(DB_PATH):
+    os.remove(DB_PATH)
+
+conn = sqlite3.connect(DB_PATH)
 
 cursor = conn.cursor()
 
 cursor.execute("""
-CREATE TABLE IF NOT EXISTS products (
+CREATE TABLE products (
     id INTEGER PRIMARY KEY,
     product_name TEXT,
     price REAL
