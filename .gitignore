@@ -1,9 +1,13 @@
 venv/
 __pycache__/
 .pytest_cache/
-screenshots/
-reports/
 *.pyc
-*.db
-.idea/
 .vscode/
+.idea/
+
+reports/
+screenshots/
+
+drivers/
+
+*.log
